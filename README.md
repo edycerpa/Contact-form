@@ -22,6 +22,7 @@ REGITRARSE EN [Resend](https://resend.com/)
   RESEND_API_KEY= ESCRIBIR_TU_API_KEY_AQUI
   ```
 
+[Creditos a Coding in Public](https://www.youtube.com/@CodinginPublic)
 
 #
 #
