@@ -1,0 +1,188 @@
+:root {
+  /* COLORS */
+
+  --light: #ebebeb;
+  --white: #ffffff;
+  --dark: #2a3039;
+  --darker: #20242b;
+  --black: #000000;
+  --primary: #ff4500;
+  --primary-light: #ff931e;
+  --secondary: #297ab0;
+  --secondary-light: #0099ff;
+  --fb: #5b79b8;
+  --le: #209bd6;
+}
+
+/* @font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/montserrat-400.woff2);
+  type: ('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-700.woff2);
+  type: ('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Venera";
+  src: url(./fonts/Venera-700.woff2);
+  type: ('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Venera";
+  src: url(./Venera-900.woff2);
+  type: ('woff2');
+  font-weight: 900;
+  font-style: normal;
+} */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary);
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  background: var(--darker);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darker); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary); 
+  border-radius: 10px;
+}
+
+main{
+  padding: 120px 0;
+}
+section, footer{
+  padding: 80px 0;
+}
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Venera', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+.glass{
+  background: rgba(0 0 0 / 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  color: var(--light);
+  border: 5px solid rgba(0 0 0 / 0.3);
+}
+
+a.btn-primary{
+		display: block;
+		margin-top: 20px;
+		background-color: var(--primary);
+		color: var(--light);
+		padding: 10px 30px;
+		border-radius: 5px;
+		font-weight: 700;
+		transition: .4s;
+		width: max-content;
+		&:hover{
+			opacity: 0.8;
+		}
+}
+a.btn-secondary{
+  display: block;
+  margin-top: 20px;
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: .4s;
+  width: max-content;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* ============ */
+/* CONTACT FORM */
+/* ============ */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+input, textarea {
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  transition: .15s;
+}
+input:focus, textarea:focus {
+  border: 1px solid rgba(255, 69, 0, 0.3);
+  outline: 2px solid var(--secondary);
+  outline-offset: 5px;
+}
+textarea {
+  height: 200px;
+}
+input:nth-of-type(3),
+input:nth-of-type(4){
+  width: calc(100% / 2  - 1rem);
+}
+input[type="submit"] {
+  padding: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type="submit"]:hover, 
+input[type="submit"]:focus {
+  opacity: 0.8;
+}

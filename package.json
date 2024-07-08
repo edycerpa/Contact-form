@@ -1,7 +1,11 @@
 {
-  "name": "",
+  "name": "contact-form-template",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0",
+  "author": {
+    "name": "Eddy Cerpa",
+    "url": "https://cerpawebdesigns.com"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +14,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.11.5"
+    "@astrojs/node": "^8.3.2",
+    "@astrojs/react": "^3.6.0",
+    "@react-email/components": "^0.0.21",
+    "@react-email/render": "^0.0.16",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.11.5",
+    "axios": "^1.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-email": "^2.1.5",
+    "resend": "^3.4.0"
   }
 }

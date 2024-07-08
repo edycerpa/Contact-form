@@ -1,16 +1,43 @@
 ---
-
+import Form from '../components/Form.tsx'
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="./css/style.css">
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Contact Form</h1>
+		<Form client:load/>
 	</body>
 </html>
+
+
+<style>
+  h1 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+  h1::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    left: 25%;
+    right: 25%;
+    bottom: -10px;
+    background-color: var(--primary);
+    margin-top: 1rem;
+  }
+
+	
+</style>
